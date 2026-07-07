@@ -2,8 +2,8 @@ cask "crustdata" do
   version "0.4.5"
   sha256 "187a26ed186a38f01e89793562b63001b3295e9dbda8e0f20855ceebcc5c684b"
 
-  url "https://github.com/bhav-cd/homebrew-tap/releases/download/v#{version}/Crustdata_#{version}_aarch64.dmg",
-      verified: "github.com/bhav-cd/homebrew-tap/"
+  url "https://github.com/crustdata/homebrew-tap/releases/download/v#{version}/Crustdata_#{version}_aarch64.dmg",
+      verified: "github.com/crustdata/homebrew-tap/"
   name "Crustdata"
   desc "Crustdata desktop app"
   homepage "https://crustdata.com"

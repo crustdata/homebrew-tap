@@ -8,7 +8,7 @@
 set -euo pipefail
 
 VERSION="${1:?usage: ./release.sh <version>, e.g. ./release.sh 0.4.0}"
-REPO="bhav-cd/homebrew-tap"
+REPO="crustdata/homebrew-tap"
 DMG="$HOME/Desktop/Dev/mac-app/src-tauri/target/release/bundle/dmg/Crustdata_${VERSION}_aarch64.dmg"
 CASK="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/Casks/crustdata.rb"
 
