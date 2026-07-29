@@ -22,7 +22,7 @@ echo "▶ Creating GitHub release v${VERSION} with DMG asset…"
 gh release create "v${VERSION}" "$DMG" \
   --repo "$REPO" \
   --title "Crustdata ${VERSION}" \
-  --notes "Crustdata macOS app (Apple Silicon, unsigned). Install: brew install --cask ${REPO%/*}/tap/crustdata"
+  --notes "Crustdata macOS app (Apple Silicon, unsigned). Install: `brew install --cask ${REPO%/*}/tap/crustdata`"
 
 echo "▶ Updating cask version + sha256…"
 /usr/bin/sed -i '' -E "s/^  version \".*\"/  version \"${VERSION}\"/" "$CASK"
