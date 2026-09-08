@@ -14,9 +14,9 @@ cask "crustdata" do
 
   # Unsigned / un-notarized build: strip the quarantine flag so Gatekeeper
   # doesn't block first launch. Belt-and-suspenders alongside --no-quarantine.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Crustdata.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Crustdata.app"]
   end
 
   zap trash: [
