@@ -1,6 +1,6 @@
 cask "crustdata" do
-  version "0.5.20"
-  sha256 "67d0b9d135d0443efcbbe6b2c740f4ad672aa3c70f57595e3f13bec6d860a83e"
+  version "0.5.21"
+  sha256 "8e453fd5ddcaadba96ba8814e0fa28ed168e3e88b0b1a433b9d34d21fb4be383"
 
   url "https://github.com/crustdata/homebrew-tap/releases/download/v#{version}/Crustdata_#{version}_aarch64.dmg"
   name "Crustdata"
